@@ -1,17 +1,16 @@
 package com.zjgsu.bookapp;
 
 public class Book {
-    private int id;
+    private int id = -1;
     private String title;
     private String author;
-    private int pages;
-    private float price;
+    private int pages = 0;
+    private float price = 0.0f;
 
     public Book() {
     }
 
-    public Book(int id, String title, String author, int pages, float price) {
-        this.id = id;
+    public Book(String title, String author, int pages, float price) {
         this.title = title;
         this.author = author;
         this.pages = pages;
